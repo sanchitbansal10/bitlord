@@ -9,15 +9,15 @@ const mongoose = require('mongoose')
 
 
 
-/* //controller import
-const submitNewUser = require('./controller/submitNewUser')
-const submitInterest = require('./controller/submitInterest')
+//controller import
+const submitSuggestion = require('./controller/submitSuggestion')
+/* const submitInterest = require('./controller/submitInterest')
 const getUserData = require('./controller/getUserData')
-const giveInterestedPeople = require('./controller/giveInterestedPeople')
- */
-/* 
+const giveInterestedPeople = require('./controller/giveInterestedPeople') */
+
+
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/yozo"); */
+mongoose.connect("mongodb://localhost:27017/trapp");
 
 
 var jsonParser = bodyParser.json()
@@ -28,13 +28,13 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 const app = express();
 
 
-/* //routes
-app.post('/submitNewUser',jsonParser,submitNewUser)
-app.get('/getUserData',getUserData)
+//routes
+app.post('/submitSuggestion',jsonParser,submitSuggestion)
+/* app.get('/getUserData',getUserData)
 app.post('/submitInterest',jsonParser,submitInterest)
 app.get('/exploreInterest',giveInterestedPeople)
-
  */
+
 
 
 

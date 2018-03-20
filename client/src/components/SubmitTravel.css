@@ -1,0 +1,21 @@
+.But{
+    width:200px;
+    height:150px;
+    border-radius:25%;
+    font-size:30px;
+    color:black;
+  }
+  
+  .ButCon{
+    position:absolute;
+    top:40px;
+    left:1200px
+  }
+
+  .conttext{
+    background:#D24000
+  }
+
+  .container{
+      display:flex
+  }
